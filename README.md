@@ -1,7 +1,3 @@
-# biz-mgmt
-
-> 卡欧科技业务管理前端项目
-
 ## Build Setup
 
 ``` bash
