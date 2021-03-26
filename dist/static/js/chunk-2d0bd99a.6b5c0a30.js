@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0bd99a"],{"2d4f":function(e,n,t){"use strict";t.r(n);var u=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div")},r=[],c={created:function(){this.$router.push({path:"/union/service-mgmt/subscribe",query:{}})}},s=c,i=t("2877"),a=Object(i["a"])(s,u,r,!1,null,null,null);n["default"]=a.exports}}]);

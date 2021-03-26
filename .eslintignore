@@ -1,0 +1,7 @@
+/public/
+/config/
+/dist/
+/src/libs/
+./*.js
+/src/components/BizEditor/ueditor/
+/src/components/BizEditorH/ueditor-dev/

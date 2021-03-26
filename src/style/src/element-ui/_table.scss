@@ -1,0 +1,122 @@
+// .el-table th.is-leaf, .el-table td {
+//   border-bottom: none!important;
+// }
+.el-table {
+  font-size: 12px;
+  border-radius: 10px;
+  th > .cell {
+    position: relative!important;
+    word-wrap: normal!important;
+    text-overflow: ellipsis!important;
+    vertical-align: middle!important;
+    width: 100%!important;
+    -webkit-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+    min-height: 40px!important;
+    /* line-height: 40px; */
+    display: flex!important;
+    align-items: Center!important;
+  }
+  .overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .product-info-content {
+    min-height: 48px;
+    margin: 5px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    img {
+      float: left;
+      width: 48px;
+      height: 48px;
+    }
+    .wrapper {
+      min-width: 160px;
+      padding: 0px 20px;
+      .titleClass {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+      }
+    }
+    .amount {
+      // width: 25px;
+    }
+  }
+  .cell {
+    -webkit-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    white-space: normal!important;
+    word-break: break-all!important;
+    /* line-height: 60px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 30px!important;
+    display: flex!important;
+    align-items: Center!important;
+  }
+  // 避免操作列按钮换行后由于margin-left错位的问题
+  .el-button {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .el-button + .el-button {
+    margin-left: 0;
+  }
+
+  .el-table__header {
+    .is-leaf {
+      padding: 5px 0;
+    }
+    .el-table-column--selection {
+      .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    th {
+      background-color: $el-table__header-bg;
+    }
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover > td {
+    background-color: #fef3e5;
+  }
+  .el-table__body-wrapper {
+    .el-table-column--selection {
+      .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .biz-customcol {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .biz-two-row {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    tr {
+      &:hover > td {
+        background-color: #fef3e5;
+      }
+      &.el-table__row--striped.current-row > td,
+      &.current-row > td {
+        background-color: #ffd6a0;
+      }
+    }
+  }
+}

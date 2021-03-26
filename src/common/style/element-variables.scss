@@ -1,0 +1,36 @@
+/* 改变主题色变量 */
+$--color-primary: #ff7300;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+textarea {
+  font-family: 'Microsoft YaHei', '微软雅黑';
+}
+
+$biz-color-primaty: #ff7300;
+
+$--select-font-size: 13px;
+
+@import '~element-ui/packages/theme-chalk/src/index';
+
+.el-select .el-input__inner {
+  font-size: 13px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #c0c4cc;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #c0c4cc;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #c0c4cc;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #c0c4cc;
+}
